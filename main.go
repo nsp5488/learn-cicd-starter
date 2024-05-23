@@ -37,6 +37,7 @@ func main() {
 
 	apiCfg := apiConfig{}
 
+	// todo
 	// https://github.com/libsql/libsql-client-go/#open-a-connection-to-sqld
 	// libsql://[your-database].turso.io?authToken=[your-auth-token]
 	dbURL := os.Getenv("DATABASE_URL")
