@@ -21,9 +21,9 @@ func TestGetAPIKey(t *testing.T) {
 	malformed := errors.New("malformed authorization header")
 	expected := []expectedShape{
 		{"abc123", nil},
-		{"", ErrNoAuthHeaderIncluded},
-		{"", malformed},
-		{"", malformed},
+		{"1", ErrNoAuthHeaderIncluded},
+		{"1", malformed},
+		{"1", malformed},
 	}
 
 	for i, c := range cases {
